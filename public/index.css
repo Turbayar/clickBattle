@@ -1,0 +1,46 @@
+body{
+    margin: 0;
+    height: 100vh;
+}
+h1{
+    margin: 0%;
+    font-size: 100px;
+    line-height: 1;
+}
+.header{
+    height: 20vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+}
+.score-1{
+    color: red;
+}
+.reset{
+   margin-bottom: 10px;
+}
+.reset button{
+    width: 100px;
+    height: 30px;
+}
+.score-2{
+    color: blue;
+}
+
+.main{
+    display: flex;
+    height: 80vh;
+    width: 100%;
+}
+.red-team{
+   background-color: red;
+   width: 50%;
+   height: 100%;
+   
+}
+.blue-team{
+  background-color: blue;
+  width: 50%;
+  height: 100%;
+}

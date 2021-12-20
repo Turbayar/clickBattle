@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+        <h1 class="score-1"> </h1>
+        <div class="reset"> <button onclick="clickButton()"> reset </button> </div>
+        <h1 class="score-2"> </h1>
+    </div>
+    <div class="main"> 
+        <div class="red-team" onclick="clickField('red')"></div>
+        <div class="blue-team" onclick="clickField('blue')"></div>
+    </div>
+    
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+
+    <script>
+        const firebaseConfig = {
+            apiKey: "AIzaSyCmIwQAKiJWYm0_EItRhXCfl4Y7VOzMpEU",
+  authDomain: "clickbattle-c0196.firebaseapp.com",
+  projectId: "clickbattle-c0196",
+  storageBucket: "clickbattle-c0196.appspot.com",
+  messagingSenderId: "558570261908",
+  appId: "1:558570261908:web:6d61140837ba0d783f9381"
+        };
+  
+        firebase.initializeApp(firebaseConfig);
+        const db = firebase.firestore();
+      </script>
+      <script src="./index.js"></script>
+</body>
+</html>
